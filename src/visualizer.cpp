@@ -18,8 +18,8 @@ void Visualizer::drawParticles(vector <ofVec3f> particle_position){
     for(int i=0; i<100; i++){
         ofSetColor(255-i*10,255,255);
         ofPushMatrix();
-        ofTranslate(particle_position[i]);
-        ofDrawCircle(particle_position[i], 3);
+        ofTranslate(particle_position[i].x,particle_position[i].y, particle_position[i].z);
+        ofDrawCircle(0,0,0,3);
         ofPopMatrix();
     }
     

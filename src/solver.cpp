@@ -19,8 +19,9 @@ void Solver::calcUpdate(){
             float theta = i * (2 * 3.14 / n);
             //float r = 120 / (m * n) * i + 120 / m * h;
             float r = 30;
-            particle_position[i].x  = cos(theta)*r*theta + 200;
-            particle_position[i].y =  sin(theta)*r*theta + 200;
+            particle_position[i].x = cos(theta)*r*theta + 200;
+            particle_position[i].y = sin(theta)*r*theta + 200;
+            particle_position[i].z = i;
         }
     }
     
