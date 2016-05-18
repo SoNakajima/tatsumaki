@@ -10,8 +10,8 @@ public:
 	~Solver(){};
 
 	void calcUpdate();
-	vector <ofVec3f> getParticlePosition ();
-	vector <ofVec3f> getParticleVelocity ();
+	vector <ofVec3f> getParticlePosition();
+	vector <ofVec3f> getParticleVelocity();
 
 private:
 

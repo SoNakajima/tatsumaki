@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8827426C1CEB0AC70071CB9F /* solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8827426B1CEB0AC70071CB9F /* solver.cpp */; };
+		8827426E1CEB0DE70071CB9F /* visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8827426D1CEB0DE70071CB9F /* visualizer.cpp */; };
 		893EA4E31CEB049300E4E281 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893EA4DE1CEB049300E4E281 /* main.cpp */; };
 		893EA4E41CEB049300E4E281 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893EA4DF1CEB049300E4E281 /* ofApp.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8827426B1CEB0AC70071CB9F /* solver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solver.cpp; sourceTree = "<group>"; };
+		8827426D1CEB0DE70071CB9F /* visualizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = visualizer.cpp; sourceTree = "<group>"; };
 		893EA4DE1CEB049300E4E281 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		893EA4DF1CEB049300E4E281 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
 		893EA4E01CEB049300E4E281 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
@@ -107,7 +111,9 @@
 				893EA4DE1CEB049300E4E281 /* main.cpp */,
 				893EA4DF1CEB049300E4E281 /* ofApp.cpp */,
 				893EA4E01CEB049300E4E281 /* ofApp.h */,
+				8827426B1CEB0AC70071CB9F /* solver.cpp */,
 				893EA4E11CEB049300E4E281 /* solver.h */,
+				8827426D1CEB0DE70071CB9F /* visualizer.cpp */,
 				893EA4E21CEB049300E4E281 /* visualizer.h */,
 			);
 			path = src;
@@ -210,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				893EA4E41CEB049300E4E281 /* ofApp.cpp in Sources */,
+				8827426E1CEB0DE70071CB9F /* visualizer.cpp in Sources */,
 				893EA4E31CEB049300E4E281 /* main.cpp in Sources */,
+				8827426C1CEB0AC70071CB9F /* solver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,16 +2,19 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-		//solver = new Solver(PARTICLE_NUM); 
+		//solver = new Solver(PARTICLE_NUM);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    solver.calcUpdate();
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    visualizer.drawParticles(solver.getParticlePosition());
+    
 
 }
 
