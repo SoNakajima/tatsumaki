@@ -2,20 +2,30 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-		//solver = new Solver(PARTICLE_NUM);
+    
+    ofBackground(255);
+    increaseRate = TWO_PI / 60;
+    cam.setDistance(6000);
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    solver.calcUpdate();
+
+    ang += increaseRate;
+    if(ang>TWO_PI) ang = 0;
+    solver.calcUpdate(ang);
+    
+    randomWalker.update();
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    visualizer.drawParticles(solver.getParticlePosition());
     
-
+    cam.begin();
+    visualizer.drawParticles(solver.getParticlePosition(),randomWalker.pos);
+    cam.end();
 }
 
 //--------------------------------------------------------------

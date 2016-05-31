@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "solver.h"
 #include "visualizer.h"
+#include "RandomWalker.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -23,7 +24,14 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 		static const int PARTICLE_NUM = 1000;
-		
+    
+    float increaseRate;
+    float ang;
+    
 		Solver solver = Solver(PARTICLE_NUM);
 		Visualizer visualizer;
+    RandomWalker randomWalker;
+    
+    
+    ofEasyCam cam;
 };

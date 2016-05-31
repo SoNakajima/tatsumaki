@@ -8,18 +8,19 @@
 
 #include <stdio.h>
 #include "visualizer.h"
-#include "solver.h"
 
 
 
-void Visualizer::drawParticles(vector <ofVec3f> particle_position){
+void Visualizer::drawParticles(vector <ofVec3f> particle_position,ofVec2f basePos){
     
     
-    for(int i=0; i<100; i++){
+    for(int i=0; i<particle_position.size(); i++){
         ofSetColor(255-i*10,255,255);
         ofPushMatrix();
-        ofTranslate(particle_position[i].x,particle_position[i].y, particle_position[i].z);
-        ofDrawCircle(0,0,0,3);
+        ofRotate(-90, 1, 0, 0);
+        ofTranslate(basePos.x, basePos.y, -2000);
+        ofTranslate(particle_position[i].x+ofRandom(-5, 5),particle_position[i].y+ofRandom(-5, 5), particle_position[i].z);
+        ofDrawSphere(0,0,0,15);
         ofPopMatrix();
     }
     
