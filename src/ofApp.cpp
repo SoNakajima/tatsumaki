@@ -27,6 +27,10 @@ void ofApp::draw(){
     cam.begin();
     visualizer.drawParticles(solver.getParticlePosition(),randomWalker.pos);
     cam.end();
+    
+    ofSetColor(0);
+    ofDrawBitmapString("g = "+ofToString(visualizer.g), 20, 20);
+    ofDrawBitmapString("b = "+ofToString(visualizer.b), 20, 40);
 }
 
 //--------------------------------------------------------------

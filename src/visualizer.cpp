@@ -13,13 +13,17 @@
 
 void Visualizer::drawParticles(vector <ofVec3f> particle_position,ofVec2f basePos){
     
+    g = 200-abs(basePos.x*0.2);
+    
+    b = 255-abs(basePos.y*0.2);
+    
     
     for(int i=0; i<particle_position.size(); i++){
-        ofSetColor(255-i*10,255,255);
+        ofSetColor(255-i*0.1,g,b);
         ofPushMatrix();
         ofRotate(-90, 1, 0, 0);
         ofTranslate(basePos.x, basePos.y, -2500);
-        ofTranslate(particle_position[i].x+ofRandom(-5, 5),particle_position[i].y+ofRandom(-5, 5), particle_position[i].z+ofRandom(-5,5));
+        ofTranslate(particle_position[i].x,particle_position[i].y, particle_position[i].z);
         ofDrawSphere(0,0,0,15);
         ofPopMatrix();
     }

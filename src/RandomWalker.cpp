@@ -28,5 +28,5 @@ void RandomWalker::update(){
 
 void RandomWalker::randomizeVelocity(){
     vel.set( ofRandom(-1,1), ofRandom(-1,1) );
-    vel *= 20;
+    vel *= 30;
 }

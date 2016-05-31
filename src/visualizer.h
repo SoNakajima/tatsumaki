@@ -12,4 +12,6 @@ public:
 	void drawParticlesColorFromVelocity(vector <ofVec3f> particle_position, vector <ofVec3f> particle_velocity);
 
 	/* data */
+    
+    float r,g,b;
 };
