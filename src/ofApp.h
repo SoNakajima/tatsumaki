@@ -23,7 +23,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		static const int PARTICLE_NUM = 1000;
+		static const int PARTICLE_NUM = 3000;
     
     float increaseRate;
     float ang;

@@ -5,7 +5,7 @@ void ofApp::setup(){
     
     ofBackground(255);
     increaseRate = TWO_PI / 60;
-    cam.setDistance(6000);
+    cam.setDistance(5500);
     
 }
 
@@ -14,6 +14,7 @@ void ofApp::update(){
 
     ang += increaseRate;
     if(ang>TWO_PI) ang = 0;
+    
     solver.calcUpdate(ang);
     
     randomWalker.update();
