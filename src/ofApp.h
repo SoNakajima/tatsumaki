@@ -25,9 +25,6 @@ class ofApp : public ofBaseApp{
 
 		static const int PARTICLE_NUM = 3000;
     
-    float increaseRate;
-    float ang;
-    
 		Solver solver = Solver(PARTICLE_NUM);
 		Visualizer visualizer;
     RandomWalker randomWalker;

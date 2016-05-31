@@ -10,7 +10,7 @@
 #include "visualizer.h"
 
 
-
+// basePos がわかりづらい
 void Visualizer::drawParticles(vector <ofVec3f> particle_position,ofVec2f basePos){
     
     g = 200-abs(basePos.x*0.2);

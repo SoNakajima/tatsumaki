@@ -9,7 +9,7 @@ public:
 	};
 	~Solver(){};
 
-	void calcUpdate(float ang);
+	void calcUpdate();
 	vector <ofVec3f> getParticlePosition();
 	vector <ofVec3f> getParticleVelocity();
 
@@ -18,5 +18,6 @@ private:
 	/* data */
 	vector <ofVec3f> particle_position;
     float ang;
+    float increaseRate = TWO_PI / 60;
 
 };
