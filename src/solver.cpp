@@ -15,6 +15,7 @@ void Solver::calcUpdate(float _ang){
         ang = _ang+i;
         particle_position[i].x = ang * cos(ang);
         particle_position[i].y = ang * sin(ang);
+//        particle_position[i].z = pow(ang, 1.35);
         particle_position[i].z = ang * 4;
     }
     
